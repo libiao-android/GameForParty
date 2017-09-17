@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/serialnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serialnumber"
+            android:textSize="@dimen/serialnumber_textsize" />
+
+        <TextView
+            android:id="@+id/queryterm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/term"
+            android:textSize="@dimen/queryterm_textsize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/termList"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ListView_item_height"
+            android:background="@color/orange"
+            android:dividerHeight="@dimen/Listview_dividerHeight" >
+        </ListView>
+
+        <Button
+            android:id="@+id/exitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/removebtn_marginLeft"
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>

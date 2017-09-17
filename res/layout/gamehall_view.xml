@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui_se" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/host_title_height"
+        android:layout_marginLeft="@dimen/host_title_margin"
+        android:layout_marginRight="@dimen/host_title_margin"
+        android:layout_marginTop="@dimen/host_title_margin"
+        android:background="@color/dan_hei" >
+
+        <Button
+            android:id="@+id/hall_title_btn_id"
+            android:layout_width="@dimen/gridview_item_imageview_width"
+            android:layout_height="@dimen/host_title_im_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/topair"
+            android:text="@string/hall_title_btn_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/host_title_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/host_title_margin"
+        android:layout_marginLeft="@dimen/host_title_margin"
+        android:layout_marginRight="@dimen/host_title_margin"
+        android:background="@color/dan_hei" >
+
+        <TextView
+            android:id="@+id/app_bottom_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/host_title_im_marginleft"
+            android:text="@string/app_bottom_tv_text"
+            android:textColor="@color/bai_se"
+            android:textSize="@dimen/host_title_tv_size" />
+
+        <Button
+            android:id="@+id/app_bottom_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hostview_tv_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/host_title_im_marginleft"
+            android:background="@drawable/btn_bg1"
+            android:text="@string/app_bottom_btn_text" />
+
+        <EditText
+            android:id="@+id/app_buttom_et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hostview_tv_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fragment_pair_tv_marginleft"
+            android:layout_marginRight="@dimen/fragment_pair_tv_marginleft"
+            android:layout_toLeftOf="@id/app_bottom_btn_id"
+            android:layout_toRightOf="@id/app_bottom_tv_id"
+            android:background="@drawable/b1"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/hei_se" />
+    </RelativeLayout>
+
+    <com.nubia.gameforparty.SlidingRelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top"
+        android:layout_margin="@dimen/hall_content_margin"
+        android:background="@color/bai_se" />
+
+</RelativeLayout>

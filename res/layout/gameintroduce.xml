@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gameintro" >
+
+    <ImageView
+        android:id="@+id/gobackIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/introduce_goback_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/gameIntroduce"
+        android:layout_marginBottom="@dimen/introduce_goback_marginbottom"
+        android:src="@drawable/goback" />
+
+</RelativeLayout>

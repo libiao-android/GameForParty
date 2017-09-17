@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/green" >
+
+    <RelativeLayout
+        android:id="@+id/actlay1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/show_team_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/choosedTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+
+        <TextView
+            android:id="@+id/TeamScore1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/choosedTeam1"
+            android:layout_alignTop="@id/choosedTeam1"
+            android:layout_marginLeft="@dimen/show_score_marginleft"
+            android:layout_toRightOf="@id/choosedTeam1"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/actlay2"
+        android:layout_width="@dimen/turnpic_width"
+        android:layout_height="@dimen/turnpic_height"
+        android:layout_below="@id/actlay1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/turnpic_margintop" >
+
+        <ImageView
+            android:id="@+id/turnable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/rd" />
+
+        <ImageView
+            android:id="@+id/finger"
+            android:layout_width="@dimen/pic_finger_width"
+            android:layout_height="@dimen/pic_finger_height"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/finger" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/actlay3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/choosedaction_height"
+        android:layout_below="@id/actlay2"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/ExpressWay1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/Express"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+
+        <TextView
+            android:id="@+id/Expressmethod1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/choosedaction_marginleft"
+            android:layout_toRightOf="@+id/ExpressWay1"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actlay4"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/actlay3"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/ToSeeAction"
+            android:layout_width="@dimen/toseeaction_width"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/toseeaction" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actlay5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/eactiongoback_height"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/goback2"
+            android:layout_width="@dimen/eactiongoback_width"
+            android:layout_height="@dimen/eactiongoback_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/eactiongoback_marginleft"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/goback" />
+
+        <ImageView
+            android:id="@+id/senddata"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/eactiongoback_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/eactiongoback_marginleft"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/senddata" />
+    </RelativeLayout>
+
+</RelativeLayout>

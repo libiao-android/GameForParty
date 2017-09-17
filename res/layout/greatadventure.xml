@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zhuomian01"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/TableLayout_height"
+      
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/easy" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hard" >
+        </RadioButton>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/exitbtn_marginLeft"
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/exit" />
+
+        <Button
+            android:id="@+id/seemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seemessagebtn_marginRight"
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/seemessage" />
+        <Button
+            android:id="@+id/truth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exit"
+            android:layout_marginLeft="@dimen/truthbtn_marginLeft"
+            android:layout_marginBottom="@dimen/truthbtn_marginTop"
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/truth" />
+
+        <Button
+            android:id="@+id/dare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/seemessage"
+          android:layout_alignTop="@id/truth"
+          android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/truthbtn_marginLeft"
+            android:layout_marginBottom="@dimen/truthbtn_marginTop"
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/dare" />
+    </RelativeLayout>
+
+</LinearLayout>

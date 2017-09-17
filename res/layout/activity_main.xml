@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gao"
+     >
+
+    <TextView
+        android:id="@+id/time_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/jishi_tv_margin"
+        android:layout_marginTop="@dimen/jishi_tv_margin"
+        android:background="@drawable/time_bg"
+        android:gravity="center"
+        android:textSize="@dimen/jishi_tv_size" />
+
+</RelativeLayout>

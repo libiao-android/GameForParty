@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/green" >
+
+    <RelativeLayout
+        android:id="@+id/metlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/method_result_height"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/choosedTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/team_result_height"
+            android:layout_marginTop="@dimen/team_result_margintop"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+
+        <TextView
+            android:id="@+id/TeamScore2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/team_result_height"
+            android:layout_alignBottom="@id/choosedTeam2"
+            android:layout_alignTop="@id/choosedTeam2"
+            android:layout_marginLeft="@dimen/team_result_marginleft"
+            android:layout_toRightOf="@id/choosedTeam2"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+
+        <TextView
+            android:id="@+id/ExpressWay2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/team_result_height"
+            android:layout_below="@id/choosedTeam2"
+            android:gravity="center"
+            android:text="@string/Express"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+
+        <TextView
+            android:id="@+id/Expressmethod2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/team_result_height"
+            android:layout_alignBottom="@id/ExpressWay2"
+            android:layout_alignTop="@id/ExpressWay2"
+            android:layout_marginLeft="@dimen/team_result_marginleft"
+            android:layout_toRightOf="@id/ExpressWay2"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/metlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/timecounting_height"
+        android:layout_below="@id/metlayout1"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/timeleft"
+            android:layout_width="@dimen/timeleft_width"
+            android:layout_height="@dimen/timeleft_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timecounting"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize1" />
+
+        <Button
+            android:id="@+id/start1"
+            android:layout_width="@dimen/startcountingbut_width"
+            android:layout_height="@dimen/startcountingbut_height"
+            android:layout_below="@id/timeleft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/startcountingbut_margintop"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/start" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/metlayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/answer_result_height"
+        android:layout_below="@id/metlayout2" >
+
+        <ImageView
+            android:id="@+id/answer_right"
+            android:layout_width="@dimen/answer_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/answer_marginleft"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/anser_right" />
+
+        <ImageView
+            android:id="@+id/answer_wrong"
+            android:layout_width="@dimen/answer_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/answer_marginleft"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/answer_wrong" />
+
+        <TextView
+            android:id="@+id/nowMethod"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/answer_wrong"
+            android:layout_toRightOf="@id/answer_right"
+            android:gravity="center"
+            android:textSize="@dimen/stupid_amazing_textsize1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/metlayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/methodgoback_layer_height"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/goback2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/methodgoback_height"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/methodgoback_marginbottom"
+            android:layout_marginTop="@dimen/methodgoback_margintop"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/goback" />
+    </RelativeLayout>
+
+</RelativeLayout>

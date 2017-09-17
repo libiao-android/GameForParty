@@ -1,0 +1,78 @@
+<com.nubia.gameforparty.SlidingRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/host_title_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fragment_pair_tv_marginleft"
+                android:text="@string/fragment_pair_tv_text"
+                android:textColor="@color/hong_se"
+                android:textSize="@dimen/fragment_pair_tv_size" />
+
+            <Button
+                android:id="@+id/fragment_pair_btn_id"
+                android:layout_width="@dimen/pair_btn_width"
+                android:layout_height="@dimen/pair_btn_height"
+                android:layout_marginLeft="@dimen/fragment_pair_tv_marginleft"
+                android:text="@string/fragment_pair_btn_text" 
+                android:background="@drawable/btn_search"/>
+            <TextView 
+                android:id="@+id/pair_time_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fragment_pair_tv_marginleft"
+                
+                android:textSize="@dimen/fragment_pair_tv_size"
+                
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/two"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fragment_pair_listview_marginTop"
+            android:layout_below="@id/one"
+            android:background="@color/hui_se" />
+
+       
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pair_tv_height"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_pair_tv_marginleft"
+            android:text="@string/pair_bottom_tv_text"
+            android:textColor="@color/hong_se"
+            android:textSize="@dimen/jishi_tv_size" />
+       
+          <View
+            android:id="@+id/four"
+            android:layout_above="@id/five"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fragment_pair_listview_marginTop"
+            android:background="@color/hui_se" />
+        <ListView
+            android:id="@+id/fragment_pair_listview"
+            android:layout_above="@id/four"
+            android:layout_below="@id/two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</com.nubia.gameforparty.SlidingRelativeLayout>

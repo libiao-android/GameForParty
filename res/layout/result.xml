@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/showresult_width"
+    android:layout_height="@dimen/showresult_height"
+    android:layout_centerHorizontal="true"
+    android:background="@color/lightyellow" >
+
+    <TextView
+        android:id="@+id/ShowResult"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/result_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/stupid_amazing_textsize" />
+
+    <ImageView
+        android:id="@+id/goback3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/result_goback_height"
+        android:layout_below="@+id/ShowResult"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:src="@drawable/gamecontinue" />
+
+</RelativeLayout>

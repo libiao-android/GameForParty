@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jiemian01"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.nubia.lijia.WheelView
+            android:id="@+id/wheel1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/wheel1_lijia_WheelView_height"
+            android:layout_margin="@dimen/wheel1_lijia_WheelView_margin"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/LinearLayout_WheelView_marginTop"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.nubia.lijia.WheelView
+            android:id="@+id/wheel2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/wheel2_lijia_WheelView_height"
+            android:layout_margin="@dimen/LinearLayout_wheel_time_marginTop"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/LinearLayout_wheel_time_marginTop" >
+
+        <Button
+            android:id="@+id/startbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/startbtn" />
+
+        <Button
+            android:id="@+id/exitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/exitbtn_wheel_time_marginBottom"
+            android:layout_marginLeft="@dimen/exitbtn_wheel_time_marginLeft"
+            android:background="@drawable/bg_alibuybutton"
+            android:text="@string/back" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/green"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/showteam_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/showteam_margintop" >
+
+        <ImageView
+            android:id="@+id/teamFeng"
+            android:layout_width="@dimen/team_width"
+            android:layout_height="@dimen/team_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/team_marginleft"
+            android:layout_marginRight="@dimen/team_marginleft"
+            android:layout_marginTop="@dimen/team_margintop1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/team1" />
+
+        <ImageView
+            android:id="@+id/teamSha"
+            android:layout_width="@dimen/team_width"
+            android:layout_height="@dimen/team_height"
+            android:layout_alignLeft="@id/teamFeng"
+            android:layout_alignRight="@+id/teamFeng"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/team_margintop2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/team2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/chooseteam_bottomLayer_height"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/help1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/helpbutton_height"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/help" />
+
+        <ImageView
+            android:id="@+id/goback1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/helpbutton_height"
+            android:layout_alignBottom="@+id/help1"
+            android:layout_alignTop="@+id/help1"
+            android:layout_marginRight="@dimen/goback_marginright"
+            android:layout_toLeftOf="@+id/help1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/goback" />
+
+        <ImageView
+            android:id="@+id/setting1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/helpbutton_height"
+            android:layout_alignBottom="@+id/help1"
+            android:layout_alignTop="@+id/help1"
+            android:layout_marginLeft="@dimen/goback_marginright"
+            android:layout_toRightOf="@+id/help1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+</RelativeLayout>

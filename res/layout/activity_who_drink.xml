@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+
+    <!-- 设置翻牌窗口 -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout11_height"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView01"
+            android:layout_width="@dimen/imageView01_width"
+            android:layout_height="@dimen/imageView01_height"
+            android:contentDescription="@string/imageView01Description"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <!-- 设置缩略图界面 -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout12_height"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 第一张缩略图 -->
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="@dimen/imageView11_width"
+            android:layout_height="@dimen/imageView11_height"
+            android:layout_margin="@dimen/imageView11_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageView11Description"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <!-- 第二张缩略图 -->
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="@dimen/imageView12_width"
+            android:layout_height="@dimen/imageView12_height"
+            android:layout_margin="@dimen/imageView12_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageView12Description"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <!-- 第三张缩略图 -->
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="@dimen/imageView13_width"
+            android:layout_height="@dimen/imageView13_height"
+            android:layout_margin="@dimen/imageView13_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageView13Description"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <!-- 第四张缩略图 -->
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="@dimen/imageView14_width"
+            android:layout_height="@dimen/imageView14_height"
+            android:layout_margin="@dimen/imageView14_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageView14Description"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <!-- 设置抽牌按键 -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout13_height"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout131"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/RelativeLayout131_marginBottom" >
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="@dimen/button01_width"
+                android:layout_height="@dimen/button01_height"
+                android:layout_marginLeft="@dimen/button01_marginLeft"
+                android:layout_marginRight="@dimen/button01_marginRight"
+                android:background="@drawable/check" />
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button02_height"
+                android:layout_alignTop="@id/button01"
+                android:layout_marginRight="@dimen/button02_marginRight"
+                android:layout_toRightOf="@id/button01"
+                android:background="@drawable/fugukuang1"
+                android:onClick="clickButtonCheck"
+                android:text="@string/button02_text"
+                android:textSize="@dimen/button02_textSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout132"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/RelativeLayout132_marginBottom" >
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="@dimen/button11_width"
+                android:layout_height="@dimen/button11_height"
+                android:layout_marginLeft="@dimen/button11_marginLeft"
+                android:layout_marginRight="@dimen/button11_marginRight"
+                android:background="@drawable/round1" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button12_height"
+                android:layout_alignBottom="@id/button11"
+                android:layout_marginRight="@dimen/button12_marginRight"
+                android:layout_toRightOf="@id/button11"
+                android:background="@drawable/fugukuang1"
+                android:onClick="clickButtonRound1"
+                android:text="@string/button12_text"
+                android:textSize="@dimen/button12_textSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout133"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/RelativeLayout133_marginBottom" >
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="@dimen/button21_width"
+                android:layout_height="@dimen/button21_height"
+                android:layout_marginLeft="@dimen/button21_marginLeft"
+                android:layout_marginRight="@dimen/button21_marginRight"
+                android:background="@drawable/round2" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button22_height"
+                android:layout_alignTop="@id/button21"
+                android:layout_marginRight="@dimen/button22_marginRight"
+                android:layout_toRightOf="@id/button21"
+                android:background="@drawable/fugukuang1"
+                android:onClick="clickButtonRound2"
+                android:text="@string/button22_text"
+                android:textSize="@dimen/button22_textSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout134"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/RelativeLayout134_marginBottom" >
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="@dimen/button31_width"
+                android:layout_height="@dimen/button31_height"
+                android:layout_marginLeft="@dimen/button31_marginLeft"
+                android:layout_marginRight="@dimen/button31_marginRight"
+                android:background="@drawable/round3" />
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button32_height"
+                android:layout_alignTop="@id/button31"
+                android:layout_marginRight="@dimen/button32_marginRight"
+                android:layout_toRightOf="@id/button31"
+                android:background="@drawable/fugukuang1"
+                android:onClick="clickButtonRound3"
+                android:text="@string/button32_text"
+                android:textSize="@dimen/button32_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

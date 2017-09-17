@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">聚好玩</string>
+    <string name="action_settings">Settings</string>
+ 
+    <string name="gridview_item_tv_text">敬请期待</string>
+    <string name="game_random_btn_text">产生一个随机数(0,1000)</string>
+     <string name="game_contentDescription">游戏图标</string>
+    <string name="host_bluetooth_bonded_text">已经连接的手机列表</string>
+    <string name="host_info_text">玩家信息输出列表</string>
+    <string name="host_btn_text">清空</string>
+    <string name="hall_title_btn_text">蓝牙配对</string>
+    <string name="fragment_pair_tv_text">请选择配对</string>
+    <string name="fragment_pair_btn_text">开始搜索</string>
+    <string name="app_bottom_tv_text">蓝牙名称</string>
+    <string name="app_bottom_btn_text">修改</string>
+    <string name="pair_bottom_tv_text">注：深色为已配对，浅色为未配对，点击即可开始配对</string>
+    <string name="dices">投骰子</string>
+  
+   <string name="gameIntroduce">游戏介绍</string>
+    <string name="Express">表达方式</string>
+    <string name="TeamFeng">风之队</string>
+    <string name="TeamSha">沙之队</string>
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    <string name="tips1">请先选择表达方式</string>
+
+    <string name="start"> 开始</string>
+    <string name="dices_btn">固定</string>
+    
+    <string name="truth">真心话</string>
+    <string name="dare">大冒险</string>
+    <string name="easy">容易</string>
+    <string name="medium">中等</string>
+    <string name="hard">高难</string>
+	<string name="exit">退出</string>
+    <string name="seemessage">查看词条</string>
+
+    <string name="startbtn">start</string>
+
+    <string name="back">返回</string>
+    <string name="serialnumber">序号</string>
+    <string name="term">词条列表</string>
+    <string name="number">1</string>
+    <string name="termcontent">词条内容</string>
+    
+    <!-- for shuangqiang -->
+    <string name="button02_text">抽 牌</string>
+    <string name="button12_text">Round 1</string>
+    <string name="button22_text">Round 2</string>
+    <string name="button32_text">Round 3</string>
+    <string name="imageView01Description">显示每轮出牌</string>
+    <string name="imageView11Description">显示第一张牌</string>
+    <string name="imageView12Description">显示第二张牌</string>
+    <string name="imageView13Description">显示第三张牌</string>
+    <string name="imageView14Description">显示第四张牌</string>
+</resources>

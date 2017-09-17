@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_margin="@dimen/host_view_margin">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hostview_tv_height"
+        android:gravity="center"
+        android:text="@string/host_bluetooth_bonded_text"
+        android:textSize="@dimen/hostview_tv_size" 
+        android:background="@color/hong_se"/>
+
+    <ListView
+        android:id="@+id/host_bluetooth_bonded_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+    <LinearLayout 
+         android:layout_width="fill_parent"
+        android:layout_height="@dimen/hostview_tv_height"
+        android:gravity="center"
+        android:background="@color/hong_se"
+        android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/host_info_text"
+        android:textSize="@dimen/hostview_tv_size" />
+        <Button  android:layout_width="wrap_content"
+        android:layout_height="@dimen/hostview_btn_height"
+        android:gravity="center"
+        android:text="@string/host_btn_text"
+        android:layout_marginLeft="@dimen/hostview_btn_paddingleft"
+        android:id="@+id/host_btn_id"
+        android:background="@color/bai_se"
+        />
+    </LinearLayout>
+      
+
+    <ListView
+        android:id="@+id/host_info_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

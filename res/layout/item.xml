@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  
+		xmlns:android="http://schemas.android.com/apk/res/android"  
+		android:layout_width="fill_parent"  
+		android:layout_height="fill_parent"    
+		android:orientation="horizontal" ><!-- 使用线性布局,默认不写的话是线性布局 -->  
+   
+		<TextView  
+			android:layout_width="@dimen/content_number_width"  
+			android:textSize="@dimen/content_number_textsize"  
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:id="@+id/number"
+			android:text="@string/number"/>  
+			
+		<TextView  
+			android:layout_width="fill_parent"  
+			android:textSize="@dimen/content_textsize"  
+			android:layout_height="wrap_content"
+			android:id="@+id/termcontent"
+			android:text="@string/termcontent"/>  
+
+
+		
+</LinearLayout>  
+

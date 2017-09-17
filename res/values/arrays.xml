@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="action">
+        <item>笑话</item>
+        <item>动作</item>
+        <item>画画</item>
+        <item>唇语</item>
+        <item>语言</item>
+    </string-array>
+    
+    <string-array name="jokes">
+        <item>小马过河</item>
+        <item>盲人摸象</item>
+        <item>小明上学</item>
+        <item>糗事</item>
+    </string-array>
+
+     <string-array name="body">
+        <item>羽毛球</item>
+        <item>嘚瑟</item>
+        <item>好汉歌</item>
+        <item>看鬼片</item>
+    </string-array>
+    
+     <string-array name="draw">
+        <item>豆腐渣工程</item>
+        <item>炸弹</item>
+        <item>自行车</item>
+        <item>大树</item>
+    </string-array>
+    
+     <string-array name="lips">
+        <item>武松打虎</item>
+        <item>孤独九剑</item>
+        <item>海豚音</item>
+        <item>水货</item>
+    </string-array> 
+  
+<string-array name="speak">
+        <item>促销</item>
+        <item>武林大会</item>
+        <item>咸猪手</item>
+        <item>除草</item>
+    </string-array>
+
+    
+</resources>
